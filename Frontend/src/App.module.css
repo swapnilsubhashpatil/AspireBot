@@ -1,0 +1,1366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 7px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Track background */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9 100%); /* Gradient color */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, #4e89ff 0%, #a066f5 100%); /* Brighter gradient on hover */
+  }
+
+/* login Page CSS */
+
+.mainDiv{
+    width: 100vw;
+    height: 100vh;
+}
+
+.loginDivMain{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.959);
+}
+
+.NavBarLoginDiv{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+}
+
+.NavBarLoginDiv h1{
+    font-size: 29px;
+}
+
+.createAccountLink{
+    text-decoration: none;
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    margin: 10px;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 30px;
+    display: block;
+}
+
+.createAccountLink:hover{
+    background-position: right center;
+}
+
+.loginDiv1{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContentDiv {
+    width: 30vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    backdrop-filter: blur(10px); /* Creates the frosted glass effect with blur */
+    border-radius: 30px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.411); /* Optional: Adds a faint border to enhance the glass effect */
+    padding: 30px; /* Optional: Adds padding inside the div */
+    color: white;
+}  
+
+.loginContentDiv1 {
+    width: 30vw;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    backdrop-filter: blur(10px); /* Creates the frosted glass effect with blur */
+    border-radius: 30px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.411); /* Optional: Adds a faint border to enhance the glass effect */
+    padding: 30px; /* Optional: Adds padding inside the div */
+    color: white;
+}  
+
+
+.loginContentDivHeading{
+    font-size: 37px;
+}
+.loginContentDivPara{
+    margin-top: 5px;
+    font-size: 15px;
+    color: rgb(181, 181, 181);
+}
+
+.InputContentDiv{
+    margin-top: 40px;
+}
+
+.emailInput{
+    width: 100%;
+    height: 7vh;
+    padding: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border: solid 1px rgba(255, 255, 255, 0.411);
+    border-radius: 10px;
+    margin-top: 3px;
+    color: white;
+}
+
+.paraInput{
+    margin-left: 3px;
+    font-size: 18px;
+}
+
+.InputContentDiv1{
+    margin-top: 20px;
+}
+
+.loginBtnDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.loginBtn {
+    width: 100%;
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+    margin: 10px;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 30px;
+    display: block;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.loginBtn:hover {
+    background-position: right center; /* Slide the gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: translateY(-3px); /* Lift the button slightly */
+}
+
+.orParaDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.googleSignINDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.googleSignINDiv1{
+    width: 90%;
+}
+
+.InputContentDivName{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.InputContentDivEmail{
+    margin-right: 10px;
+}
+
+.customToast{
+    color: white !important;
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%) !important;
+    
+}
+
+
+/* main Page CSS */
+
+.mainPageMainDiv{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.959);
+    overflow-y: auto;
+}
+
+.navBarMainPage{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.logoNavBarMainPage h1{
+    font-size: 28px;
+}
+
+.linkNavBarMainPage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.linkElementNavBar{
+    text-decoration: none;
+    margin: 20px;
+    color: rgb(181, 181, 181);
+    font-size: 17px;
+}
+
+.linkElementNavBar:hover{
+    color: white;
+}
+
+.ProfileBtnNavBarMainPage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profileBtn{
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    margin: 10px;
+    padding: 6px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 30px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.profileBtn:hover{
+    background-position: right center;
+}
+
+
+.userInfoDiv {
+    position: absolute;
+    top: 70px; /* Adjust based on the Profile button's position */
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    backdrop-filter: blur(10px); /* Creates the frosted glass effect with blur */
+    border-radius: 30px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.411); /* Optional: Adds a faint border to enhance the glass effect */
+    padding: 20px 30px; /* Optional: Adds padding inside the div */
+    z-index: 1000;
+    color: white;
+}
+
+.logoutBtn {
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    padding: 3px 20px;
+    text-align: center;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.logoutBtn:hover {
+    background-position: right center;
+}
+
+.userInfoDivPara1{
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.userInfoDivPara2{
+    color: rgb(181, 181, 181);
+}
+
+
+/* section 1 Main Page */
+
+.section1MainPage{
+    width: 100%;
+    height: 90vh;
+    background-image: url("https://images.pexels.com/photos/2068664/pexels-photo-2068664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.overlaySection1MainPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.overlaySection1MainPageDiv1{
+    width: 40vw;
+    margin-left: 40px;
+    margin-top: 90px;
+    line-height: 90px;
+}
+
+.overlaySection1MainPageDiv1Para1{
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.overlaySection1MainPageDiv2{
+    width: 40vw;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.overlaySection1MainPageDiv2 p{
+    font-size: 19px;
+    color: rgb(181, 181, 181);
+}
+
+
+.overlaySection1MainPageDiv3{
+    margin-left: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.exploreBtn{
+    width: 10vw;
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    padding: 15px;
+    text-align: center;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 2px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.exploreBtn:hover{
+    background-position: right center;
+}
+
+
+.learnMoreBtn{
+    width: 10vw;
+    margin-left: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+/* section 2 Main Page */
+
+.section2MainPage{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3vmax;
+}
+
+.section2MainPageDiv1{
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 40px;
+    margin-left: 20px;
+}
+
+.section2MainPageDiv2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+}
+
+.section2MainPageDiv1InnerDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.section2MainPageDiv1Para1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.section2MainPageDiv1Para2{
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(181, 181, 181);
+}
+
+.cryptoCurrencyText {
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+    display: inline-block; /* Ensure the span adapts to text size */
+}
+
+.section2MainPageDiv1InnerDiv1Para1 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.section2MainPageDiv1InnerDiv2{
+    margin-left: 20px;
+}
+
+.cryptoPriceDiv{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; /* Optional: add some space between the divs */
+}
+
+.priceDiv{
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    color: black;
+}
+
+.coinImg{
+    width: 50%;
+    height: 8vmax;
+}
+
+.currencyHeading{
+    margin-top: 7px;
+    font-size: 25px;
+}
+
+.exchangePriceDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.exchangePriceDiv{
+    margin-top: 5px;
+}
+
+.priceExchangePara{
+    color: blue;
+    font-weight: 500;
+}
+
+.pricePara{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+/* ------ section 3 main page ----------  */
+
+.section3MainPage {
+    width: 100%;
+    height: 70vh; /* Adjust to content height */
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vmax;
+  }
+  
+  .section3Content {
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .section3Heading {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .section3Description {
+    font-size: 1.2rem;
+    color: #d8d8d8;
+    margin-bottom: 40px;
+  }
+  
+  .featureGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .featureCard {
+    height: 40vh;
+    background: linear-gradient(to right, #4e89ff 0%, #8E54E9 100%);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: white;
+  }
+  
+  .featureCard:hover {
+    background: linear-gradient( 170deg, #4a6edb 10%, #7a5de8 90%, #4a6edb 20%);
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+  }
+  
+  .featureCard h3 {
+    font-size: 2.3rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .featureCard p {
+    font-size: 1rem;
+    color: #dbdbdb;
+    line-height: 1.5;
+    margin-top: 40px;
+  }
+
+  /* section 4 css */
+
+  .section4MainPage{
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    margin-top: 10vmax;
+    background-image: url("https://images.pexels.com/photos/6770775/pexels-photo-6770775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .overlaySection4MainPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px 30px;
+  }
+
+  .overlaySection4MainPage h1{
+    font-size: 45px;
+    margin-left: 40px;
+    margin-top: 70px;
+  }
+
+  .overlaySection4MainPage p{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+
+  /* footer section */
+
+  .footerSection{
+    width: 100%;
+    background-color: rgba(32, 32, 32, 0.7);
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /* Profile Section Select option */
+
+  .ProfileBtnNavBarMainPage select{
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+
+.ProfileBtnNavBarMainPage option{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/* Currency Section */
+
+.currenciesSection1{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.currenciesSection1Div1{
+    width: 50vw;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stayAheadHeading{
+    margin-top: 30px;
+    font-size: 52px;
+}
+
+.discoverPara{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.currenciesSection1Div1 form{
+    padding: 8px;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.currenciesSection1Div1  input{
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+.currenciesSection1Div1 button{
+    border: none;
+    background: linear-gradient(to right, #4e89ff 0%, #8E54E9 100%);
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.currenciesSection1Div1 button:hover{
+    background-position: right center;
+}
+
+
+.cryptoTable {
+    width: 900px;
+    margin: auto;
+    background: rgba(131, 131, 131, 0.125); /* Semi-transparent white */
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px); /* Adds the glassy effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow */
+}
+
+.tableLayout {
+    display: grid;
+    grid-template-columns: 4fr 7fr 4fr 4fr 5fr;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.766); /* Transparent border */
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.marketCap{
+    text-align: right;
+}
+
+.tableLayout{
+    text-decoration: none;
+}
+
+
+.tableLayout:last-child{
+    border: none;
+}
+
+.tableLayout div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tableLayout div img{
+    width: 35px;
+}
+
+.tableLayout .green{
+    color: #00D515;
+    text-align: center;
+}
+
+.tableLayout .red{
+    color: #ff4646;
+    text-align: center;
+}
+
+
+/* coin Page Css */
+
+.coinMainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.8); /* Dim background */
+  }
+  
+  .coinMainDivInnerDiv {
+    width: 70%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    margin-top: 80px;
+  }
+  
+  .coinMainDivInnerDiv1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .coinInfo {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .coinInfoTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .coinInfoTable th,
+  .coinInfoTable td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .coinInfoTable th {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .coinMainDivInnerDiv11{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .coinMainDivInnerDiv11 img{
+    width: 60px;
+  }
+
+  .cryptoCurrencyNamePara{
+    font-size: 32px;
+    margin-left: 10px;
+  }
+
+  .addToFavoriteBtn{
+    border: none;
+    color: white;
+    border: solid 1px white;
+    background: transparent;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+
+  .addToFavoriteBtn:hover{
+    border: none;
+    background: rgb(255, 255, 255);
+    color: black;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+
+  .section2MainPageDiv1InnerDiv1Para2{
+    color: #d8d8d8;
+  }
+
+
+  .favoriteCryptosMainDiv{
+    width: 100%;
+    height: 60vh;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 30px;
+  }
+
+
+  .favoriteCryptoDiv {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 15px 0;
+    background-color: rgba(120, 120, 120, 0.1); /* semi-transparent white */
+    color: white;
+    backdrop-filter: blur(10px); /* Blur the background behind the div */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* light white border for a subtle effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft shadow for depth */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .favoriteCryptoDiv:hover {
+    transform: scale(1.05); /* slight zoom effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* deeper shadow on hover */
+    cursor: pointer;
+  }
+  
+  .cryptoInfoDiv {
+    max-width: 70%;
+  }
+  
+  .removeFavoriteBtn {
+    border: none;
+    background: linear-gradient(to right, #4e89ff 0%, #8E54E9 100%);
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+ 
+  
+
+  .favoriteContentDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+  }
+  
+
+  .favoriteContentDiv h1{
+    font-size: 39px;
+  }
+
+  .favoriteContentDiv p{
+    font-size: 19px;
+    margin-top: 10px;
+  }
+
+  .imageAndNameCrypto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .imageAndNameCrypto img{
+    width: 50px;
+  }
+
+  .imageAndNameCrypto h1{
+    margin-left: 10px;
+  }
+
+  .cryptoInfoDiv1{
+    margin-top: 10px;
+  }
+
+  .cryptoInfoDiv1 p{
+    font-size: 16px;
+    color: #d8d8d8;
+  }
+
+
+  .converterHeadingDiv{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    margin-top: 30px;
+    color: white;
+  }
+
+
+  .converterHeadingDiv h1{
+    font-size: 55px;
+  }
+
+  .converterHeadingDiv p{
+    width: 70vmax;
+    text-align: center;
+    font-size: 19px;
+    color: #c2c2c2;
+    margin-top: 10px;
+  }
+
+  .convertInputFieldsDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .convertInputFieldsDiv input{
+    width: 27vw;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: solid 1px #d8d8d8;
+    color: white;
+    font-size: 25px;
+    border-radius: 50px;
+  }
+
+  .convertInputFieldsDiv i{
+    color: white;
+    padding: 30px;
+    border-radius: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .convertInputFieldsDiv select{
+    width: 9vw;
+    margin-left: 10px;
+    padding: 15px 15px;
+    border-radius: 30px;
+    font-size: 20px;
+    background: linear-gradient(to right, #4e89ff 0%, #8E54E9 100%);
+    color: white;
+    outline: none;
+}
+
+.convertInputFieldsDiv option{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.sendCryptoCurrencyMainDiv{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sendCryptoCurrencyContentDiv{
+  width: 70vw;
+  height: 60vh;
+  background: linear-gradient(135deg, #528afa, #8c44ff, #7e80ff);
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sendCryptoCurrencyContentDiv::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 70%);
+  animation: rotateBg 10s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotateBg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mainRecommendationDiv{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questionPara{
+  font-size: 2.1rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.inputFields {
+  width: 30vmax;
+  font-size: 300px;
+}
+
+.inputFieldLarge {
+  height: 40px;
+}
+
+.inputDropdown {
+  height: 40px;
+}
+
+
+.investmentPara{
+  color: rgb(236, 236, 236);
+  font-size: 17px;
+  margin: 20px 40px;
+}
+
+.logoMainDiv{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.imageContainerDiv{
+  width: 210px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px;
+}
+
+.imageContainerDiv img{
+  width: 100%;
+  height: 100%;
+   border-radius: 500px;
+}
+
+.getStartedBtnDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.getStartedBtnDiv button{
+  width: 15vmax;
+  padding: 17px;
+  font-size: 17px;
+  cursor: pointer;
+  background: rgb(59, 59, 59);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.getStartedBtnDiv button:hover{
+  background: rgb(40, 40, 40);
+}
+
+.mainDivInvestment{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.recommendationPopUpOverlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.recommendationPopUpContent{
+    width: 60%;
+    max-width: 700px;
+    display: flex;
+    height: 40vmax;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 30px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, rgba(50, 50, 50, 0.8), rgba(20, 20, 20, 0.8)); /* Gradient for a smooth, modern feel */
+    backdrop-filter: blur(15px); /* Stronger blur for a more distinct background separation */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Soft but noticeable border */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 4px 6px rgba(0, 0, 0, 0.2); /* Multi-layer shadow for a floating effect */
+    transition: all 0.4s ease-in-out; /* Smoother transition */
+    color: #d1d1d1; /* Lighter gray text for a sleek contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Elegant sans-serif font */
+}
+
+
+/* Overlay Popup Styles */
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupContent {
+    width: 60%;
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 55px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, rgba(50, 50, 50, 0.8), rgba(20, 20, 20, 0.8)); /* Gradient for a smooth, modern feel */
+    backdrop-filter: blur(15px); /* Stronger blur for a more distinct background separation */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Soft but noticeable border */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 4px 6px rgba(0, 0, 0, 0.2); /* Multi-layer shadow for a floating effect */
+    transition: all 0.4s ease-in-out; /* Smoother transition */
+    color: #d1d1d1; /* Lighter gray text for a sleek contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Elegant sans-serif font */
+    overflow: hidden; /* Preventing any overflow from content */
+}
+
+.popupContent h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff; /* White color for headers to stand out */
+}
+
+.popupContent p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+.popupContent h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.popupContent label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.popupContent input,
+.popupContent select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.popupContent select {
+  cursor: pointer;
+}
+
+.popupActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.popupActions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupActions button[type="submit"] {
+  width: 300px;
+  background: linear-gradient(to right, #4e89ff 0%, #8E54E9 100%);
+  color: white;
+}
+
+.popupActions button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.popupActions button[type="button"] {
+  background-color: transparent;
+  color: white;
+  border: solid 1px white;
+}
+
+.popupActions button[type="button"]:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.recommendationBtnDivOption{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.recommendationBtnDivOption button{
+  width: 300px;
+  background: linear-gradient(to right, #4e89ff 0%, #8E54E9 100%);
+  color: white;
+  margin: 0px 5px;
+  padding: 10px;
+  font-size: 1.0rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+}
+
+.responseDiv{
+  width: 100%;
+  height: 30vmax;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+
+.closeRecommendationBtn{
+  width: 300px;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.courierRecommendationDiv{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.courierRecommendationDivBtn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+

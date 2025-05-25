@@ -1,0 +1,6 @@
+Flask
+flask-cors
+langchain
+cohere
+requests
+python-dotenv
