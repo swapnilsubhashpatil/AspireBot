@@ -53,7 +53,7 @@ function MainPage() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/counsel",
+        "https://aspirebot.onrender.com/counsel",
         {
           interests: formData.interest,
           skills_to_learn: formData.skills,
