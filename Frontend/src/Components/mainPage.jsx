@@ -53,7 +53,7 @@ function MainPage() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/counsel",
+        "https://aspirebot.onrender.com/counsel",
         {
           interests: formData.interest,
           skills_to_learn: formData.skills,
@@ -255,8 +255,8 @@ function MainPage() {
                 <button type="submit" disabled={loading}>
                   {loading ? (
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
-  <CircularProgress size={24} sx={{ color: "white" }} />
-</Box>
+                      <CircularProgress size={24} sx={{ color: "white" }} />
+                    </Box>
                   ) : (
                     "Submit"
                   )}
@@ -301,13 +301,13 @@ function MainPage() {
                 {formatRecommendation(geminiRecommendation)}
               </div>
             )}
-             <div className={Style.courierRecommendationDivBtn}>
+            <div className={Style.courierRecommendationDivBtn}>
               <button
-              className={Style.closeRecommendationBtn}
-              onClick={() => setRecommendationPopUp(false)}
-            >
-              Close
-            </button>
+                className={Style.closeRecommendationBtn}
+                onClick={() => setRecommendationPopUp(false)}
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
